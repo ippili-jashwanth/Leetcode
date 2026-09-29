@@ -5,18 +5,14 @@ public:
         for(string i : strs)
         {   
             string j = i;
-            sort(j.begin(),j.end());
-            
+            sort(j.begin(),j.end()); 
             mp[j].push_back(i);
-            
-            
-            
         }
         vector <vector<string>>v;
         for(auto i : mp)
-            {
-                v.push_back(i.second);
-            }
-            return v;
+        {
+            v.push_back(i.second);
+        }
+        return v;
     }
 };
