@@ -17,11 +17,9 @@ public:
             {
                 s.pop();
                 i++;
-
             }
             else if( s.top() < -a[i] )
             {
-              
               s.pop();
             }
             else
