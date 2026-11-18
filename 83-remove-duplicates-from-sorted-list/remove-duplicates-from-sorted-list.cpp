@@ -14,7 +14,8 @@ public:
         ListNode* temp = head;
         if(head==NULL || head->next ==NULL )return temp;
         head->next = deleteDuplicates(head->next);
-        if(head->val == head->next->val) head ->next = head->next->next;
+        if(head->val == head->next->val) head->next = head->next-> next;
         return temp;
+       
     }
 };
